@@ -20,9 +20,9 @@
 .dashboard_wrap + .dashboard_wrap{margin-top: 30px;}
 .dashboard_wrap dt{position:relative;font-size: 18px;line-height: 33px;color: #002b7a;font-weight: 700;padding-left: 20px;}
 .dashboard_wrap dt:before{content:'';position:absolute;top:50%;left:0;display:inline-block;width:6px;height:6px;background: url(/images/contents/blt_blue_dot.png) center center no-repeat;margin-top: -3px;}
-.dashboard_wrap dd:after{content:'';display:table;clear:both;}
+.dashboard_wrap .dashboard_area:after{content:'';display:table;clear:both;}
 .dashboard_list{float:left;display: flex;width: 50%;margin-top: 10px;}
-.dashboard_list li{flex:1;background:#f7f7f7;box-shadow:1px 2px 5px #dcdcdc,-1px 2px 5px #dcdcdc;border-radius: 10px;padding: 20px;margin-left: 10px;}
+.dashboard_list li{flex:1;background:#f7f7f7;box-shadow:1px 2px 5px #dcdcdc,-1px 2px 5px #dcdcdc;border-radius: 10px;padding: 20px;margin-left: 10px;cursor:pointer;}
 .dashboard_list.first_type li:first-of-type{margin-left: 0;}
 .dashboard_list li .tit{position:relative;font-size: 18px;font-weight: 500;line-height: 20px;color: #002b7a;padding-bottom: 15px;}
 .dashboard_list li .tit:before{content:'';position:absolute;bottom:0;left:0;display:inline-block;width:100%;height:4px;}

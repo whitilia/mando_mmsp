@@ -5,7 +5,7 @@
 
 @media screen and (max-width:960px){
 .lnb{display:none;}
-.container .cont_wrap{width:100%;padding: 0 10px 20px;}
+.container .cont_wrap{width:100%;padding: 0 10px 100px;}
 .container .cont_wrap .content{width:100%;min-width:320px;}
 
 .dashboard_list{width: 100%;}
