@@ -26,17 +26,30 @@
 }
 
 @font-face {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 300;
+     src: url(./font/NotoSansKR-Light.woff) format('truetype');
+}
+
+@font-face {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 400;
+     src: url(./font/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
    font-family: 'Montserrat';
    font-style: normal;
    font-weight: 500;
-   src: url(./font/Montserrat-Medium.woff) format('woff'),
-        url(./font/Montserrat-Medium.ttf) format('truetype');
+   src: url(./font/Montserrat-Medium.ttf) format('truetype');
    unicode-range:U+0030-0039;
 }
+
 @font-face {
-        font-family: 'Montserrat';
-        font-style: bold;
-        font-weight: 700;
-        src: url(./font/Montserrat-Bold.woff) format('woff'),
-             url(./font/Montserrat-Bold.ttf) format('truetype');
+     font-family: 'Montserrat';
+     font-style: bold;
+     font-weight: 700;
+     src: url(./font/Montserrat-Bold.ttf) format('truetype');
 }
