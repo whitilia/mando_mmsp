@@ -31,7 +31,7 @@ background: linear-gradient(90deg, rgba(142,77,233,1) 0%, rgba(139,80,233,1) 35%
 .gra_red .dashboard_list li .tit:before{background: rgb(142,77,233);
 background: linear-gradient(90deg, rgba(142,77,233,1) 0%, rgba(213,52,162,1) 50%, rgba(233,77,106,1) 100%);}
 .dashboard_list li .cont .total{display:block;text-align:right;font-size: 16px;line-height:16px;color: #002b7a;margin-top: 50px;}
-.dashboard_list li .cont .count{display:block;text-align:right;font-size: 48px;line-height:48px;font-weight:500;color: #002b7a;margin-top: 5px;}
+.dashboard_list li .cont .count{display:block;text-align:right;font-size: 48px;line-height:48px;font-weight:400;color: #002b7a;margin-top: 5px;}
 .dashboard_list li.ico_user{background:#f7f7f7 url(../images/contents/ico_cata_user.png) left 20px bottom 25px no-repeat;}
 .dashboard_list li.ico_device{background:#f7f7f7 url(../images/contents/ico_cata_device.png) left 20px bottom 25px no-repeat;}
 .dashboard_list li.ico_service{background:#f7f7f7 url(../images/contents/ico_cata_service.png) left 20px bottom 25px no-repeat;}
