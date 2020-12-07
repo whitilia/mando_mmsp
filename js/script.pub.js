@@ -14,7 +14,7 @@
             }
         });
     }
-    $.fn.tab = function(){
+    $.fn.catagory_tab = function(){
         var tab_btn = $('.catagory_wrap .tab_navi li');
         var tab_cont = $('.catagory_wrap .tab_content');
 
@@ -29,9 +29,26 @@
             $(this).addClass('on');
         });
     }
+    $.fn.tab = function(){
+        var $tabBtn = $('.tab_wrap .tab_navi li');
+        var $tabCont = $('.tab_wrap .tab_content');
+        var contNum = $tabCont.length;
+        $tabCont.hide();
+        $tabCont.eq(0).show();
+        $tabBtn.on('click', function(){
+        var i=$(this).index();
+        $tabBtn.removeClass('on');
+        $(this).addClass('on');
+            if(contNum > 1){
+                $tabCont.hide();
+                $tabCont.eq(i).show();
+            }
+        });
+    }
 })(jQuery);
 
 window.onload = function(){
     $.fn.lnb();         //lnb
+    $.fn.catagory_tab();         //tab
     $.fn.tab();         //tab
 }

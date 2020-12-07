@@ -7,6 +7,15 @@
 .top_box .today_area{float: right;}
 .top_box .today_area .today{display:inline-block;font-size: 14px;font-weight: 500;color: #002b7a;line-height: 20px;background: url(../images/contents/ico_clock.png) left center no-repeat;padding-left: 23px;}
 
+/* tab_style01 */
+.tab_style01{margin-top: 20px;}
+.tab_style01 .tab_wrap .tab_navi{overflow: hidden;margin-top: -1px;}
+.tab_style01 .tab_wrap .tab_navi li{float: left;}
+.tab_style01 .tab_wrap .tab_navi li a{display:inline-block;line-height:36px;color: #04307f; padding:0 20px;border-top: 1px solid #e3e4e6;border-right: 1px solid #e3e4e6;background:#fff;}
+.tab_style01 .tab_wrap .tab_navi li:first-of-type a{border-left:1px solid #e3e4e6;}
+.tab_style01 .tab_wrap .tab_navi li.on a{border-color: #04307f;background:#04307f;color:#fff;}
+.tab_style01 .tab_wrap .tab_content{border: 1px solid #e3e4e6;padding: 25px;}
+
 /* catagory_wrap */
 .catagory_wrap{margin-top: 20px;}
 .catagory_wrap .tab_navi{text-align: center;}
@@ -47,6 +56,17 @@ background: linear-gradient(90deg, rgba(142,77,233,1) 0%, rgba(213,52,162,1) 50%
 .dashboard_list li:hover .cont .total,
 .dashboard_list li.on .cont .count,
 .dashboard_list li:hover .cont .count{color: #fff;}
-
 .dashboard_wrap + .chart_area{background:#f7f7f7;box-shadow:1px 2px 5px #dcdcdc,-1px 2px 5px #dcdcdc;border-radius: 10px;margin-top: 10px;}
 .chart_area img{display:inline-block;width:100%;height:100%;}
+
+/* txt */
+.sub_tit{font-size: 18px;color: #002b7a;}
+
+/* table_wrap */
+.table_wrap table{width: 100%;table-layout: fixed;border-top: 3px solid #002b7a;}
+.table_wrap table th{height:38px;vertical-align: center;text-align: center;background: #f5f5f5;border-bottom: 1px solid #e3e4e6;font-size: 14px;color: #002b7a;}
+.table_wrap table td{height:38px;vertical-align: center;text-align: center;background: #fff;border-bottom: 1px solid #e3e4e6;font-size: 13px;color: #808080;}
+.table_style01{margin-top: 20px;}
+
+
+
