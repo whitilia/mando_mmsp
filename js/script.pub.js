@@ -14,6 +14,18 @@
             }
         });
     }
+    $.fn.toggle = function(){
+        $('.toggle_wrap dt').on('click', function(){
+            if(!$(this).hasClass('on')){
+                $(this).addClass('on');
+                $(this).siblings('dd').stop().slideDown();
+                
+            }else{
+                $(this).removeClass('on');
+                $(this).siblings('dd').stop().slideUp();
+            }
+        });
+    }
     $.fn.catagory_tab = function(){
         var tab_btn = $('.catagory_wrap .tab_navi li');
         var tab_cont = $('.catagory_wrap .tab_content');
@@ -49,6 +61,7 @@
 
 window.onload = function(){
     $.fn.lnb();         //lnb
+    $.fn.toggle();         //toggle
     $.fn.catagory_tab();         //tab
     $.fn.tab();         //tab
 }
