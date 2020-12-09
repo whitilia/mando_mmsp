@@ -1,0 +1,721 @@
+<!DOCTYPE html> 
+<html lang="ko"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no,email=no,address=no">
+<title>Mando - component</title> 
+<link rel="stylesheet" href="../css/common.css">
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/script.pub.js"></script>
+</head>
+<body> 
+<div class="wrap">
+    <!-- HEAD -->
+    <div class="header">
+        <span class="tit">MMSP</span>
+        <div class="header_wrap">
+            <div class="status_area">
+                <h3 class="user_id">B1/B2 Client ID</h3>
+                <a href="#none">Logout</a>
+                <a href="#none">Support</a>
+            </div>
+        </div>
+    </div>
+    <!-- //HEAD -->
+    <div class="container">
+        <!-- lnb -->
+        <div class="lnb">
+            <div class="lnb_wrap">
+                <h1 class="logo"><a href="#none">mando logo</a></h1>
+                <ul>
+                    <li class="on"><!-- 활성화시 클래스 'on' 추가 -->
+                        <a href="#none" class="menu_tit">HOME</a>
+                        <div class="menu_cont">
+                            <a href="#none">CS 처리</a>
+                            <a href="#none">공지사항 관리</a>
+                            <a href="#none">약관 관리</a>
+                        </div>
+                    </li>
+                    <li><!-- 활성화시 클래스 'on' 추가 -->
+                        <a href="#none" class="menu_tit">Device 관리</a>
+                        <div class="menu_cont">
+                            <a href="#none">Device 상세 정보</a>
+                            <a href="#none">Device Map 보기</a>
+                            <a href="#none">관리 Device 등록</a>
+                            <a href="#none">Divice 고장 처리</a>
+                        </div>
+                    </li>
+                    <li><!-- 활성화시 클래스 'on' 추가 -->
+                        <a href="#none" class="menu_tit">사용자 관리</a>
+                        <div class="menu_cont">
+                            <a href="#none">사용자 통계</a>
+                            <a href="#none">가입/탈퇴 통계</a>
+                        </div>
+                    </li>
+                    <li><!-- 활성화시 클래스 'on' 추가 -->
+                        <a href="#none" class="menu_tit">서비스 관리</a>
+                        <div class="menu_cont">
+                            <a href="#none">CS 처리</a>
+                            <a href="#none">공지사항 관리</a>
+                            <a href="#none">약관 관리</a>
+                        </div>
+                    </li>
+                    <li><!-- 활성화시 클래스 'on' 추가 -->
+                        <a href="#none" class="menu_tit">시스템관리</a>
+                        <div class="menu_cont">
+                            <a href="#none">Station 관리</a>
+                            <a href="#none">OTA 관리</a>
+                            <a href="#none">거래처 관리</a>
+                            <a href="#none">계정/권한 관리</a>
+                            <a href="#none">통계/리포트</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //lnb -->
+        <!-- cotnent -->
+        <div class="cont_wrap">
+            <div class="content">
+                <div class="top_box">
+                    <div class="navi_area">
+                        <span>Mando</span>
+                        <span>Home</span>
+                    </div>
+                    <div class="today_area">
+                        <span class="today">TODAY 20-11-15 16:03:23 기준</span>
+                    </div>
+                </div>
+                <div class="cont_box">
+                    <!-- sub_tit -->
+                    <h3 class="sub_tit">기기관리</h3>
+                    <!-- //sub_tit -->
+
+                    <!-- dashboard_area -->
+                    <div class="dashboard_area">
+                        <ul class="dashboard_list first_type">
+                            <li class="on">
+                                <p class="tit">운영</p>
+                                <div class="cont">
+                                    <span class="today">Today</span>
+                                    <span class="count">3,924</span>
+                                </div>
+                            </li>
+                            <li class="bg_org">
+                                <p class="tit">고장</p>
+                                <div class="cont">
+                                    <span class="today">Today</span>
+                                    <span class="count">14</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="dashboard_list">
+                            <li class="bg_org">
+                                <p class="tit">도난</p>
+                                <div class="cont">
+                                    <span class="today">Today</span>
+                                    <span class="count">12</span>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="tit">등록</p>
+                                <div class="cont">
+                                    <span class="today">Today</span>
+                                    <span class="count">3,924</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //dashboard_area -->
+
+                    <!-- sorting_wrap -->
+                    <div class="sorting_wrap">
+                        <ul>
+                            <li>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //sorting_wrap -->
+
+                    <!-- sorting_wrap -->
+                    <div class="btn_area right">
+                        <button class="btn"><span>소유이력</span></button>
+                        <button class="btn"><span>강제정지</span></button>
+                        <button class="btn"><span>도난취소</span></button>
+                        <button class="btn btn_excel"><span>Excel</span></button>
+                        <button class="btn btn_map"><span>Map</span></button>
+                        <button class="btn btn_write"><span>등록</span></button>
+                        <button class="btn btn_del"><span>삭제</span></button>
+                    </div>
+                    <div class="btn_area center last">
+                        <button class="btn btn_L btn_grey"><span>목록으로</span></button>
+                    </div>
+                    <!-- sorting_wrap -->
+
+                    <!-- input -->
+                    <span class="input">
+                        <input type="text">
+                    </span>
+                    <!-- //input -->
+
+                    <!-- input_cal -->
+                    <span class="input_cal">
+                        <input type="text" class="datepicker">
+                    </span>
+                    <!-- //input_cal -->
+
+                    <!-- input_cal col2 -->
+                    <span class="input_cal col2">
+                        <input type="text" class="datepicker">
+                        <span class="wave">-</span>
+                        <input type="text" class="datepicker">
+                    </span>
+                    <!-- //input_cal col2 -->
+
+                    <!-- select -->
+                    <span class="select">
+                        <select name="" id="">
+                            <option value="">선택</option>
+                            <option value="">선택</option>
+                            <option value="">선택</option>
+                        </select>
+                    </span>
+                    <!-- //select -->
+
+                    <!-- input_search -->
+                    <span class="input_search">
+                        <input type="text" placeholder="search...">
+                        <button class="btn_search"><span>검색</span></button>
+                    </span>
+                    <!-- //input_search -->
+
+                    <!-- input_search select -->
+                    <span class="input_search">
+                        <select name="" id="">
+                            <option value="">선택</option>
+                            <option value="">선택</option>
+                            <option value="">선택</option>
+                        </select>
+                        <input type="text" placeholder="search...">
+                        <button class="btn_search"><span>검색</span></button>
+                    </span>
+                    <!-- //input_search select -->
+
+                    <!-- table_style01 -->
+                    <div class="table_style01">
+                        <div class="table_wrap" style="width:100%;height:100%;"><!-- 테이블 사이즈에 따라 width, height 값 조정 -->
+                            <table>
+                                <colgroup>
+                                    <col width="">
+                                    <col width="">
+                                    <col width="">
+                                    <col width="">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>test</th>
+                                        <th>test</th>
+                                        <th>test</th>
+                                        <th>test</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- //table_style01 -->
+
+                    <!-- table_style02 -->
+                    <div class="table_style02">
+                        <div class="table_wrap" style="width:100%;height:100%;"><!-- 테이블 사이즈에 따라 width, height 값 조정 -->
+                            <table>
+                                <colgroup>
+                                    <col width="">
+                                    <col width="">
+                                    <col width="">
+                                    <col width="">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>test</th>
+                                        <th>test</th>
+                                        <th>test</th>
+                                        <th>test</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- //table_style02 -->
+
+                    <!-- table_style03 -->
+                    <div class="table_style03">
+                        <div class="table_wrap" style="width:100%;height:100%;"><!-- 테이블 사이즈에 따라 width, height 값 조정 -->
+                            <table>
+                                <colgroup>
+                                    <col width="">
+                                    <col width="">
+                                    <col width="">
+                                    <col width="">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>test</th>
+                                        <th>test</th>
+                                        <th>test</th>
+                                        <th>test</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- //table_style03 -->
+
+                    <!-- table_style04 -->
+                    <div class="table_style04">
+                        <div class="table_wrap" style="width:100%;height:100%;"><!-- 테이블 사이즈에 따라 width, height 값 조정 -->
+                            <table>
+                                <colgroup>
+                                    <col width="">
+                                    <col width="">
+                                    <col width="">
+                                    <col width="">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>test</th>
+                                        <th>test</th>
+                                        <th>test</th>
+                                        <th>test</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- //table_style04 -->
+
+                    <!-- tab_style01 -->
+                    <div class="tab_style01">
+                        <div class="tab_wrap">
+                            <ul class="tab_navi">
+                                <li class="on"><a href="#none">상세정보</a></li>
+                                <li><a href="#none">고장내역</a></li>
+                            </ul>
+                            <div class="tab_content">
+                                <div class="line">
+                                    <div class="toggle_wrap">
+                                        <dl>
+                                            <dt class="on">기기정보</dt>
+                                            <dd class="list_style01">
+                                                <ul class="list_tbl">
+                                                    <li>
+                                                        <span>Device ID.</span>
+                                                        <span>SPM_기기관리_501</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Type</span>
+                                                        <span>A-Type</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>기기등록일</span>
+                                                        <span>2020-07-07 00:00:00</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>기기 해지일</span>
+                                                        <span>2020-07-07 00:00:00</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>고장 발생일</span>
+                                                        <span>2020-07-07 00:00:00</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>운행수리 시작일</span>
+                                                        <span>2020-07-07 00:00:00</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>도난 발생일</span>
+                                                        <span>2020-07-07 00:00:00</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>상태</span>
+                                                        <span class="txt_red">고장</span>
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="toggle_wrap">
+                                        <dl>
+                                            <dt class="on">운영정보</dt>
+                                            <dd class="list_style02">
+                                                <ul class="list_tbl">
+                                                    <li>
+                                                        <span>누적주행거리</span>
+                                                        <span>1,000km</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>누적주행시간</span>
+                                                        <span>100h</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>누적탑승횟수</span>
+                                                        <span>10회</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>운행 시작일</span>
+                                                        <span>2020-07-07</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>운행 종료일</span>
+                                                        <span>2020-07-07</span>
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="toggle_wrap">
+                                        <dl>
+                                            <dt class="on">부품상태</dt>
+                                            <dd class="table_style03">
+                                                <div class="table_wrap">
+                                                    <table style="width:1000px;">
+                                                        <colgroup>
+                                                            <col width="">
+                                                            <col width="">
+                                                            <col width="">
+                                                            <col width="">
+                                                            <col width="">
+                                                            <col width="">
+                                                            <col width="">
+                                                            <col width="">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th colspan="2">구분</th>
+                                                                <th rowspan="2">상태</th>
+                                                                <th rowspan="2">충전횟수</th>
+                                                                <th rowspan="2">상세정보</th>
+                                                                <th rowspan="2">상태</th>
+                                                                <th rowspan="2">충전횟수</th>
+                                                                <th rowspan="2">상세정보</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>대분류</th>
+                                                                <th>소분류</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th colspan="2">배터리 Soc</th>
+                                                                <td>수리접수 (1%)</td>
+                                                                <td>2회</td>
+                                                                <td>배터리방전</td>
+                                                                <td>수리접수 (1%)</td>
+                                                                <td>2회</td>
+                                                                <td>배터리방전</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>구동부</th>
+                                                                <th>Motor</th>
+                                                                <td>정상</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>정상</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>구동부</th>
+                                                                <th>Motor</th>
+                                                                <td>정상</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>정상</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>구동부</th>
+                                                                <th>Motor</th>
+                                                                <td>정상</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>정상</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>구동부</th>
+                                                                <th>Motor</th>
+                                                                <td>정상</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>정상</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>구동부</th>
+                                                                <th>Motor</th>
+                                                                <td>정상</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>정상</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>구동부</th>
+                                                                <th>Motor</th>
+                                                                <td>정상</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>정상</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //tab_style01 -->
+
+                    <!-- paging_wrap -->
+                    <div class="paging_wrap">
+                        <a href="#none" class="btn_prev"><span>이전</span></a>
+                        <a href="#none">1</a>
+                        <a href="#none">2</a>
+                        <a href="#none">3</a>
+                        <a href="#none">4</a>
+                        <a href="#none" class="on">5</a>
+                        <a href="#none">6</a>
+                        <a href="#none">7</a>
+                        <a href="#none">8</a>
+                        <a href="#none">9</a>
+                        <a href="#none">10</a>
+                        <a href="#none">111</a>
+                        <a href="#none">112</a>
+                        <a href="#none">113</a>
+                        <a href="#none" class="btn_next"><span>다음</span></a>
+                        <a href="#none" class="count_all">118</a>
+                    </div>
+                    <!-- //paging_wrap -->
+
+                    <!-- notice_wrap -->
+                    <div class="table_style04">
+                        <div class="table_wrap" style="width:100%;height:100%;"><!-- 테이블 사이즈에 따라 width, height 값 조정 -->
+                            <table>
+                                <colgroup>
+                                    <col width="5%">
+                                    <col width="5%">
+                                    <col width="10%">
+                                    <col width="">
+                                    <col width="5%">
+                                    <col width="15%">
+                                    <col width="8%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <span class="style_chk">
+                                                <input type="checkbox" id="chk01" name="chk_box01" checked>
+                                                <label for="chk01">&nbsp</label> 
+                                            </span>
+                                        </th>
+                                        <th>번호</th>
+                                        <th>전시상태</th>
+                                        <th>제목명</th>
+                                        <th>파일</th>
+                                        <th>등록일자</th>
+                                        <th>조회</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="style_chk">
+                                                <input type="checkbox" id="chk02" name="chk_box01" checked>
+                                                <label for="chk02">&nbsp</label> 
+                                            </span>
+                                        </td>
+                                        <td>100</td>
+                                        <td>전시</td>
+                                        <td class="left"><a href="#none" class="tag_new">안녕하세요. MMSP 공지사항 게시판 입니다.</a></td>
+                                        <td><a href="#none"><img src="../images/contents/ico_file.png" alt="파일"></a></td>
+                                        <td>2020-12-09</td>
+                                        <td>267</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="style_chk">
+                                                <input type="checkbox" id="chk03" name="chk_box01">
+                                                <label for="chk03">&nbsp</label> 
+                                            </span>
+                                        </td>
+                                        <td>100</td>
+                                        <td>전시</td>
+                                        <td class="left"><a href="#none">안녕하세요. MMSP 공지사항 게시판 입니다.안녕하세요. MMSP 공지사항 게시판 입니다.안녕하세요. MMSP 공지사항 게시판 입니다.</a></td>
+                                        <td><a href="#none"><img src="../images/contents/ico_file.png" alt="파일"></a></td>
+                                        <td>2020-12-09</td>
+                                        <td>267</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="style_chk">
+                                                <input type="checkbox" id="chk04" name="chk_box01">
+                                                <label for="chk04">&nbsp</label> 
+                                            </span>
+                                        </td>
+                                        <td>100</td>
+                                        <td>전시</td>
+                                        <td class="left"><a href="#none">안녕하세요. MMSP 공지사항 게시판 입니다.</a></td>
+                                        <td><a href="#none"><img src="../images/contents/ico_file.png" alt="파일"></a></td>
+                                        <td>2020-12-09</td>
+                                        <td>267</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="style_chk">
+                                                <input type="checkbox" id="chk05" name="chk_box01" checked>
+                                                <label for="chk05">&nbsp</label> 
+                                            </span>
+                                        </td>
+                                        <td>100</td>
+                                        <td>전시</td>
+                                        <td class="left"><a href="#none">안녕하세요. MMSP 공지사항 게시판 입니다.</a></td>
+                                        <td><a href="#none"><img src="../images/contents/ico_file.png" alt="파일"></a></td>
+                                        <td>2020-12-09</td>
+                                        <td>267</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="style_chk">
+                                                <input type="checkbox" id="chk06" name="chk_box01" checked>
+                                                <label for="chk06">&nbsp</label> 
+                                            </span>
+                                        </td>
+                                        <td>100</td>
+                                        <td>전시</td>
+                                        <td class="left"><a href="#none">안녕하세요. MMSP 공지사항 게시판 입니다.</a></td>
+                                        <td><a href="#none"><img src="../images/contents/ico_file.png" alt="파일"></a></td>
+                                        <td>2020-12-09</td>
+                                        <td>267</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="style_chk">
+                                                <input type="checkbox" id="chk07" name="chk_box01" checked>
+                                                <label for="chk07">&nbsp</label> 
+                                            </span>
+                                        </td>
+                                        <td>100</td>
+                                        <td>전시</td>
+                                        <td class="left"><a href="#none">안녕하세요. MMSP 공지사항 게시판 입니다.</a></td>
+                                        <td><a href="#none"><img src="../images/contents/ico_file.png" alt="파일"></a></td>
+                                        <td>2020-12-09</td>
+                                        <td>267</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="style_chk">
+                                                <input type="checkbox" id="chk08" name="chk_box01" checked>
+                                                <label for="chk08">&nbsp</label> 
+                                            </span>
+                                        </td>
+                                        <td>100</td>
+                                        <td>전시</td>
+                                        <td class="left"><a href="#none">안녕하세요. MMSP 공지사항 게시판 입니다.</a></td>
+                                        <td><a href="#none"><img src="../images/contents/ico_file.png" alt="파일"></a></td>
+                                        <td>2020-12-09</td>
+                                        <td>267</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="style_chk">
+                                                <input type="checkbox" id="chk09" name="chk_box01" checked>
+                                                <label for="chk09">&nbsp</label> 
+                                            </span>
+                                        </td>
+                                        <td>100</td>
+                                        <td>전시</td>
+                                        <td class="left"><a href="#none">안녕하세요. MMSP 공지사항 게시판 입니다.</a></td>
+                                        <td><a href="#none"><img src="../images/contents/ico_file.png" alt="파일"></a></td>
+                                        <td>2020-12-09</td>
+                                        <td>267</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="style_chk">
+                                                <input type="checkbox" id="chk10" name="chk_box01" checked>
+                                                <label for="chk10">&nbsp</label> 
+                                            </span>
+                                        </td>
+                                        <td>100</td>
+                                        <td>전시</td>
+                                        <td class="left"><a href="#none">안녕하세요. MMSP 공지사항 게시판 입니다.</a></td>
+                                        <td><a href="#none"><img src="../images/contents/ico_file.png" alt="파일"></a></td>
+                                        <td>2020-12-09</td>
+                                        <td>267</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- //notice_wrap -->
+                </div>
+            </div>
+        </div>
+        <!-- //cotnent -->
+    </div>
+    <!-- FOOT -->
+    <div class="footer">
+        <div class="foot_wrap">
+            <p>Copyright 2020 Mando Corp. ALL RIGHTS RESERVED</p>
+        </div>
+    </div>
+    <!-- //FOOT -->
+</div>
+</body>
+</html>
