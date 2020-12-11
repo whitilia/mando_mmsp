@@ -8,7 +8,6 @@
 .container .cont_wrap{width:100%;padding: 0 10px 100px;}
 .container .cont_wrap .content{width:100%;min-width:320px;}
 
-.dashboard_list{width: 100%;}
 
-.dashboard_list li:first-of-type{margin-left: 0;}
+.dashboard_list li{width:49%;}
 }

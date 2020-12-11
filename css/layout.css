@@ -2,11 +2,11 @@
 .wrap{overflow:hidden;}
 /* HEAD */
 .header{height:35px;background: #002b7a;}
-.header .tit{float:left;width:240px;font-size: 16px;line-height: 33px;font-weight: 500;color: #fff;padding-left: 80px;}
+.header .tit{float:left;width:240px;font-size: 16px;line-height: 33px;color: #fff;padding-left: 80px;}
 .header_wrap{float:left;width:calc(100% - 240px);}
 .header_wrap .status_area{width:960px;margin:0 auto;text-align: right;}
-.header_wrap .status_area .user_id{display:inline-block;font-size: 12px;line-height: 33px;font-weight: 400;color: #fff;}
-.header_wrap .status_area a{display:inline-block;font-size: 12px;line-height: 33px;font-weight: 400;color: #fff;margin-left: 20px;}
+.header_wrap .status_area .user_id{display:inline-block;font-size: 12px;line-height: 33px;font-weight: 300;color: #fff;}
+.header_wrap .status_area a{display:inline-block;font-size: 12px;line-height: 33px;font-weight: 300;color: #fff;margin-left: 20px;}
 
 /* LNB */
 .lnb{float:left;width: 240px;}
