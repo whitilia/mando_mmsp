@@ -127,8 +127,8 @@ background: linear-gradient(90deg, rgba(142,77,233,1) 0%, rgba(213,52,162,1) 50%
 .dashboard_list li.ico_service{background:#f7f7f7 url(../images/contents/ico_cata_service.png) left 20px bottom 25px no-repeat;}
 .dashboard_list li.on,
 .dashboard_list li:hover{background-color: #002b7a;}
-.dashboard_list li.bg_org.on,
-.dashboard_list li.bg_org:hover{background-color: #ff472f;}
+.dashboard_list li.bg_error.on,
+.dashboard_list li.bg_error:hover{background-color: #9e9e9e;}
 .dashboard_list li.on .tit:before,
 .dashboard_list li:hover .tit:before{background: #fff;}
 .dashboard_list li.on .tit,

@@ -7,7 +7,11 @@
 .lnb{display:none;}
 .container .cont_wrap{width:100%;padding: 0 10px 100px;}
 .container .cont_wrap .content{width:100%;min-width:320px;}
-
-
 .dashboard_list li{width:49%;}
+
+.sorting_wrap ul{display:block;}
+.sorting_wrap ul li{margin-top: 10px;}
+.sorting_wrap ul li:first-of-type{margin-top: 0;}
+.sorting_wrap ul li.col3{display:flex;margin-left: 10px;}
+.sorting_wrap ul li.col3 span{flex:1;margin-left: 10px;}
 }
