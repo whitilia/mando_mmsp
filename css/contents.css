@@ -5,7 +5,7 @@
 
 /* input */
 input{display:inline-block;width:100%;height:30px;border: 1px solid #dddfe1;background: #fff;padding:0 10px;line-height:30px;outline:none;font-size:13px;color: #002b7a;}
-.input_cal{position:relative;display:inline-block;width:100%;overflow: hidden;vertical-align: top;}
+.input_cal{display:inline-block;width:100%;overflow: hidden;vertical-align: top;}
 .input_cal input{float:left;width:100%;padding-right: 40px;background:#fff url(../images/contents/ico_caledar.png) right 8px center no-repeat;}
 .input_cal .wave{float:left;width:16px;line-height: 30px;font-size:13px;color: #002b7a;text-align: center;}
 .input_cal.col2 input{width:calc(50% - 8px);}
@@ -245,3 +245,34 @@ background: linear-gradient(90deg, rgba(142,77,233,1) 0%, rgba(213,52,162,1) 50%
 .title_wrap ul li a span{display:inline-block;text-indent:-9999px;font-size: 0;}
 .title_wrap ul li .btn_list{background:url(../images/contents/ico_type_list.png) center center no-repeat;}
 .title_wrap ul li .btn_card{background:url(../images/contents/ico_type_card.png) center center no-repeat;}
+
+/* 개발페이지 스타일 보정 */
+/* 테이블 */
+.table_wrap .dataTable {border-collapse: collapse;}
+.table_wrap .dataTable thead th, 
+.table_wrap .dataTable thead td{padding:0 18px;border-bottom: 1px solid #e3e4e6;}
+.table_wrap .dataTable thead th, 
+.table_wrap .dataTable tfoot th{font-weight:400;}
+.table_wrap .dataTables_scroll table.dataTable.no-footer{border-top: 3px solid #002b7a;}
+.table_wrap .dataTables_scrollBody > table.dataTable.no-footer{border-top: none;}
+.table_wrap .dataTable tbody th, 
+.table_wrap .dataTable tbody td{padding:0 10px;}
+
+/* 페이징 */
+.bottomPageInfo{margin-top: 20px;}
+.dataTables_wrapper .dataTables_paginate .paginate_button{display:inline-block;width:20px;height:20px;line-height: 20px;background: #fff;font-size:10px;color: #b3b3b3;vertical-align: top;border:none;padding:0;}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button:active,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{border:none;background: #fff;color: #002b7a !important;box-shadow: none;}
+.dataTables_wrapper .dataTables_paginate .paginate_button.first,
+.dataTables_wrapper .dataTables_paginate .paginate_button.last{display:none;}
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous,
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:active{background: url(../images/contents/btn_arrow_prev.png) center center no-repeat;text-indent: -9999px;font-size: 0;cursor: pointer;}
+.dataTables_wrapper .dataTables_paginate .paginate_button.next,
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:active{background: url(../images/contents/btn_arrow_next.png) center center no-repeat;text-indent: -9999px;font-size: 0;cursor: pointer;}
+
+
+

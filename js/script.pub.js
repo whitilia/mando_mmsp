@@ -1,8 +1,8 @@
 (function($) {
     $.fn.lnb = function(){
-        $('.lnb_wrap li .menu_cont').hide();
-        $('.lnb_wrap li').eq(0).addClass('on');
-        $('.lnb_wrap li').eq(0).children('.menu_cont').show();
+        //$('.lnb_wrap li .menu_cont').hide();
+        //$('.lnb_wrap li').eq(0).addClass('on');
+        //$('.lnb_wrap li').eq(0).children('.menu_cont').show();
         $('.lnb_wrap li .menu_tit').on('click', function(){
             if(!$(this).parent('li').hasClass('on')){
                 $(this).parent('li').addClass('on');
@@ -66,7 +66,8 @@
             monthNamesShort:[ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" ],
             dayNamesMin: [ '일', '월', '화', '수', '목', '금', '토'],
             showMonthAfterYear: true,
-            showOtherMonths: true
+            showOtherMonths: true,
+            dateFormat: 'yy-mm-dd'
         });
     }
 })(jQuery);
