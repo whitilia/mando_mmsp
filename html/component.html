@@ -98,6 +98,11 @@
                     <h3 class="sub_tit">기기관리</h3>
                     <!-- //sub_tit -->
 
+                    <!-- sub_tit02 -->
+                    <h3>서브 타이틀02</h3>
+                    <p class="sub_tit02">기기등록</p>
+                    <!-- //sub_tit02 -->
+
                     <!-- dashboard_area -->
                     <h3>대쉬보드</h3>
                     <div class="dashboard_area">
@@ -136,12 +141,107 @@
 
                     <!-- sorting_wrap -->
                     <h3>필터영역</h3>
-                    <div class="sorting_wrap">
+                    <div class="sorting_wrap"><!-- 필터영역은 4분할이 기본이며 col 클래스 추가로 영역 차지 -->
                         <ul>
+                            <li class="col4"><!-- 클래스 'col2' 추가시 영역 2개 차지, col3, col4 까지 생성 가능 -->
+                                <div class="flex_box"><!-- 항목명 없을 시 div.flex_box 안에 입력폼 추가 -->
+                                    <span class="input">
+                                        <input type="text">
+                                    </span>
+                                    <span class="input">
+                                        <input type="text">
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="col2">
+                                <dl>
+                                    <dt>운행</dt>
+                                    <dd>
+                                        <span class="select">
+                                            <select name="" id="">
+                                                <option value="">선택</option>
+                                                <option value="">선택</option>
+                                                <option value="">선택</option>
+                                            </select>
+                                        </span>
+                                        <span class="input_cal col2"><!-- 클래스 'col2' 추가시 영역 2개 차지, col3 까지 생성 가능 -->
+                                            <input type="text" class="datepicker">
+                                            <span class="wave">-</span>
+                                            <input type="text" class="datepicker">
+                                        </span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="col2">
+                                <dl>
+                                    <dt>Device ID</dt>
+                                    <dd>
+                                        <span class="input_search">
+                                            <input type="text" placeholder="search...">
+                                            <button class="btn_search"><span>검색</span></button>
+                                        </span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="col3">
+                                <dl>
+                                    <dt>상태</dt>
+                                    <dd>
+                                        <span class="input">
+                                            <input type="text">
+                                        </span>
+                                    </dd>
+                                </dl>
+                            </li>
                             <li>
-                                <span class="input">
-                                    <input type="text">
-                                </span>
+                                <dl>
+                                    <dt>상태</dt>
+                                    <dd>
+                                        <span class="input">
+                                            <input type="text">
+                                        </span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>상태</dt>
+                                    <dd>
+                                        <span class="input">
+                                            <input type="text">
+                                        </span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>상태</dt>
+                                    <dd>
+                                        <span class="input">
+                                            <input type="text">
+                                        </span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>상태</dt>
+                                    <dd>
+                                        <span class="input">
+                                            <input type="text">
+                                        </span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>상태</dt>
+                                    <dd>
+                                        <span class="input">
+                                            <input type="text">
+                                        </span>
+                                    </dd>
+                                </dl>
                             </li>
                         </ul>
                     </div>
@@ -150,6 +250,7 @@
                     <!-- btn_area -->
                     <h3>버튼 스타일01 (기본 : 왼쪽정렬 + 기본버튼)</h3>
                     <div class="btn_area">
+                        <button class="btn btn_sq"><span>목록으로</span></button>
                         <button class="btn btn_sq"><span>취소</span></button>
                         <button class="btn btn_sq txt_blue"><span>등록</span></button>
                     </div>
@@ -163,14 +264,16 @@
                         <button class="btn btn_write"><span>등록</span></button>
                         <button class="btn btn_del"><span>삭제</span></button>
                     </div>
-                    <h3>버튼 스타일03 (중앙 정렬 + 둥글고 큰 버튼)</h3>
+                    <h3>버튼 스타일03 (중앙 정렬 + 둥글고 큰 버튼) - 팝업</h3>
                     <div class="btn_area center">
                         <button class="btn btn_L btn_lightgrey"><span>취소</span></button>
                         <button class="btn btn_L btn_blue"><span>등록</span></button>
-                    </div>
-                    <h3>버튼 스타일04 (중앙 정렬 + 둥글고 큰 버튼)</h3>
-                    <div class="btn_area center last">
                         <button class="btn btn_L btn_grey"><span>목록으로</span></button>
+                    </div>
+                    <h3>버튼 스타일04 (중앙 정렬 + 사각 큰 버튼) + 윗여백</h3>
+                    <div class="btn_area center last"><!-- 클래스 'last' : 윗여백 30px -->
+                        <button class="btn btn_sq btn_L btn_semigrey"><span>취소</span></button>
+                        <button class="btn btn_sq btn_L btn_blue"><span>등록</span></button>
                     </div>
                     <!-- //btn_area -->
 
@@ -197,24 +300,16 @@
                     </span>
                     <!-- //input_cal col2 -->
 
-                    <!-- input_sch01 -->
-                    <h3>검색 스타일01</h3>
-                    <span class="input_sch01">
+                    <!-- input_sch -->
+                    <h3>검색 스타일01 - 우편번호</h3>
+                    <span class="input_sch">
                         <input type="text">
                         <button><span>검색</span></button>
                     </span>
-                    <!-- //input_sch01 -->
-
-                    <!-- input_sch02 -->
-                    <h3>검색 스타일02</h3>
-                    <span class="input_sch02">
-                        <input type="text">
-                        <button><span>찾아보기</span></button>
-                    </span>
-                    <!-- //input_sch02 -->
+                    <!-- //input_sch -->
 
                     <!-- input_search -->
-                    <h3>검색 스타일03 (인풋 + 버튼)</h3>
+                    <h3>검색 스타일02 (인풋 + 버튼)</h3>
                     <span class="input_search">
                         <input type="text" placeholder="search...">
                         <button class="btn_search"><span>검색</span></button>
@@ -222,7 +317,7 @@
                     <!-- //input_search -->
 
                     <!-- input_search select -->
-                    <h3>검색 스타일04 (콤보 + 인풋 + 버튼)</h3>
+                    <h3>검색 스타일03 (콤보 + 인풋 + 버튼)</h3>
                     <span class="input_search">
                         <select name="" id="">
                             <option value="">선택</option>
@@ -233,6 +328,23 @@
                         <button class="btn_search"><span>검색</span></button>
                     </span>
                     <!-- //input_search select -->
+
+                    <!-- input_file01 -->
+                    <h3>파일첨부01</h3>
+                    <span class="input_file01">
+                        <input type="text">
+                        <button class="btn btn_sq"><span>찾아보기</span></button>
+                        <button class="btn btn_sq"><span>삭제</span></button>
+                    </span>
+                    <!-- //input_file01 -->
+
+                    <!-- input_file02 -->
+                    <h3>파일첨부02 - 팝업</h3>
+                    <span class="input_file02">
+                        <input type="text">
+                        <button><span>찾아보기</span></button>
+                    </span>
+                    <!-- //input_file02 -->
 
                     <!-- select -->
                     <h3>콤보박스</h3>
@@ -245,29 +357,84 @@
                     </span>
                     <!-- //select -->
 
-                    <!-- style_chk -->
-                    <h3>체크박스</h3>
-                    <span class="style_chk">
+                    <!-- textarea -->
+                    <h3>텍스트 영역</h3>
+                    <span class="textarea">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </span>
+                    <!-- //textarea -->
+
+                    <!-- style_chk01 -->
+                    <h3>기본 체크박스</h3>
+                    <span class="chk">
                         <input type="checkbox" id="chk1" name="chk_box" checked>
                         <label for="chk1">checkbox01</label> 
                     </span>
-                    <span class="style_chk">
+                    <span class="chk">
                         <input type="checkbox" id="chk2" name="chk_box">
-                        <label for="chk2">checkbox01</label> 
+                        <label for="chk2">checkbox02</label> 
                     </span>
-                    <!-- //style_chk -->
+                    <!-- //style_chk01 -->
+
+                    <!-- style_chk02 -->
+                    <h3>체크박스 스타일</h3>
+                    <span class="style_chk">
+                        <input type="checkbox" id="chk3" name="chk_box" checked>
+                        <label for="chk3">checkbox03</label> 
+                    </span>
+                    <span class="style_chk">
+                        <input type="checkbox" id="chk4" name="chk_box">
+                        <label for="chk4">checkbox04</label> 
+                    </span>
+                    <!-- //style_chk02 -->
 
                     <!-- style_rdo -->
-                    <h3>라디오 버튼</h3>
-                    <span class="style_rdo">
-                        <input type="radio" id="rdo01" name="rdo_box01" checked>
-                        <label for="rdo01">radio01</label> 
+                    <h3>기본 라디오 버튼</h3>
+                    <span class="rdo">
+                        <input type="radio" id="rdo01_01" name="rdo_box01" checked>
+                        <label for="rdo01_01">radio01</label> 
                     </span>
-                    <span class="style_rdo">
-                        <input type="radio" id="rdo02" name="rdo_box01">
-                        <label for="rdo02">radio02</label> 
+                    <span class="rdo">
+                        <input type="radio" id="rdo01_02" name="rdo_box01">
+                        <label for="rdo01_02">radio02</label> 
                     </span>
                     <!-- //style_rdo -->
+
+                    <!-- style_rdo -->
+                    <h3>라디오 버튼 스타일</h3>
+                    <span class="style_rdo">
+                        <input type="radio" id="rdo02_01" name="rdo_box02" checked>
+                        <label for="rdo02_01">radio01</label> 
+                    </span>
+                    <span class="style_rdo">
+                        <input type="radio" id="rdo02_02" name="rdo_box02">
+                        <label for="rdo02_02">radio02</label> 
+                    </span>
+                    <!-- //style_rdo -->
+
+                    <!-- count_wrap -->
+                    <h3>페이지 카운트</h3>
+                    <div class="count_wrap">
+                        <span class="select">
+                            <select name="" id="">
+                                <option value="">50</option>
+                                <option value="">100</option>
+                                <option value="">150</option>
+                            </select>
+                        </span>
+                        <span class="page_count">/ 페이지 (총<span class="total_count">100</span>건)</span>
+                        <div class="box_right">
+                            <span class="select">
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                </select>
+                            </span>
+                            <button class="btn btn_sq"><span>변경</span></button>
+                        </div>
+                    </div>
+                    <!-- count_wrap -->
 
                     <!-- table_style01 -->
                     <h3>테이블 스타일01</h3>
@@ -289,6 +456,48 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
                                     <tr>
                                         <td>test</td>
                                         <td>test</td>
@@ -327,6 +536,48 @@
                                         <td>test</td>
                                         <td>test</td>
                                     </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -359,6 +610,48 @@
                                         <td>test</td>
                                         <td>test</td>
                                     </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -375,7 +668,7 @@
                             </ul>
                             <div class="tab_content">
                                 <div class="line">
-                                    <div class="toggle_wrap">
+                                    <div class="toggle_wrap"><!-- 기본스타일 width값 50% -->
                                         <dl>
                                             <dt class="on">기기정보</dt>
                                             <dd class="list_style01">
@@ -447,7 +740,7 @@
                                     </div>
                                 </div>
                                 <div class="line">
-                                    <div class="toggle_wrap">
+                                    <div class="toggle_wrap w_100"><!-- 확장스타일 width값 100% : 클래스 'w_100' 추가 -->
                                         <dl>
                                             <dt class="on">부품상태</dt>
                                             <dd class="table_style03">
@@ -560,6 +853,94 @@
                     </div>
                     <!-- //tab_style01 -->
 
+                    <!-- board_wrap -->
+                    <h3>게시판 작성/수정/뷰 스타일</h3>
+                    <div class="board_wrap">
+                        <p class="date">최근 수정일 : 2020-11-26, 14:25</p>
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt class="essen">항목</dt><!-- 필수 항목 체크시 'essen' 클래스 추가 -->
+                                    <dd>
+                                        <span class="input">
+                                            <input type="text">
+                                        </span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt class="essen">항목</dt>
+                                    <dd>
+                                        <span class="input">
+                                            <input type="text">
+                                        </span>
+                                        <p class="txt">제목은 70byte까지 입력 가능합니다.(<span>0</span>/70 bytes)</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>항목</dt>
+                                    <dd>
+                                        <p class="txt">내용은 4000byte까지 입력 가능합니다.(<span>0</span>/4000bytes)</p>
+                                        <span class="textarea">
+                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                                        </span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>항목</dt>
+                                    <dd>
+                                        <span class="input">
+                                            <input type="text">
+                                        </span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>항목</dt>
+                                    <dd>
+                                        <span class="style_chk">
+                                            <input type="checkbox" id="chk5" name="chk_box" checked>
+                                            <label for="chk5">checkbox05</label> 
+                                        </span>
+                                        <span class="style_chk">
+                                            <input type="checkbox" id="chk6" name="chk_box" checked>
+                                            <label for="chk6">checkbox06</label> 
+                                        </span>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>항목</dt>
+                                    <dd>
+                                        <span class="file">Filename.jpg</span>
+                                        <button class="btn btn_sq"><span>미리보기</span></button>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="cont_big"><!-- 내용 항목에 최소 높이값 지정 -->
+                                <dl>
+                                    <dt>내용</dt>
+                                    <dd>test</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>항목</dt>
+                                    <dd>test<br/>test</dd>
+                                </dl>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- //board_wrap -->
+
                     <!-- paging_wrap -->
                     <h3>페이징</h3>
                     <div class="paging_wrap">
@@ -584,7 +965,7 @@
 
                     <!-- notice_wrap -->
                     <h3>공지사항 게시판 스타일</h3>
-                    <div class="table_style04">
+                    <div class="table_style01">
                         <div class="table_wrap" style="width:100%;height:100%;"><!-- 테이블 사이즈에 따라 width, height 값 조정 -->
                             <table>
                                 <colgroup>
@@ -599,7 +980,7 @@
                                 <thead>
                                     <tr>
                                         <th>
-                                            <span class="style_chk">
+                                            <span class="chk">
                                                 <input type="checkbox" id="chk01" name="chk_box01" checked>
                                                 <label for="chk01">&nbsp</label> 
                                             </span>
@@ -615,7 +996,7 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <span class="style_chk">
+                                            <span class="chk">
                                                 <input type="checkbox" id="chk02" name="chk_box01" checked>
                                                 <label for="chk02">&nbsp</label> 
                                             </span>
@@ -629,7 +1010,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <span class="style_chk">
+                                            <span class="chk">
                                                 <input type="checkbox" id="chk03" name="chk_box01">
                                                 <label for="chk03">&nbsp</label> 
                                             </span>
@@ -643,7 +1024,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <span class="style_chk">
+                                            <span class="chk">
                                                 <input type="checkbox" id="chk04" name="chk_box01">
                                                 <label for="chk04">&nbsp</label> 
                                             </span>
@@ -657,7 +1038,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <span class="style_chk">
+                                            <span class="chk">
                                                 <input type="checkbox" id="chk05" name="chk_box01" checked>
                                                 <label for="chk05">&nbsp</label> 
                                             </span>
@@ -671,7 +1052,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <span class="style_chk">
+                                            <span class="chk">
                                                 <input type="checkbox" id="chk06" name="chk_box01" checked>
                                                 <label for="chk06">&nbsp</label> 
                                             </span>
@@ -685,7 +1066,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <span class="style_chk">
+                                            <span class="chk">
                                                 <input type="checkbox" id="chk07" name="chk_box01" checked>
                                                 <label for="chk07">&nbsp</label> 
                                             </span>
@@ -699,7 +1080,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <span class="style_chk">
+                                            <span class="chk">
                                                 <input type="checkbox" id="chk08" name="chk_box01" checked>
                                                 <label for="chk08">&nbsp</label> 
                                             </span>
@@ -713,7 +1094,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <span class="style_chk">
+                                            <span class="chk">
                                                 <input type="checkbox" id="chk09" name="chk_box01" checked>
                                                 <label for="chk09">&nbsp</label> 
                                             </span>
@@ -727,7 +1108,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <span class="style_chk">
+                                            <span class="chk">
                                                 <input type="checkbox" id="chk10" name="chk_box01" checked>
                                                 <label for="chk10">&nbsp</label> 
                                             </span>
@@ -744,6 +1125,7 @@
                         </div>
                     </div>
                     <!-- //notice_wrap -->
+
                 </div>
             </div>
         </div>
